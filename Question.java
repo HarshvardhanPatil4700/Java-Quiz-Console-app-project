@@ -75,7 +75,5 @@ public class Question {
         sb.append(", answer=").append(answer);
         sb.append('}');
         return sb.toString();
-    }
-    
-    
+    }   
 }

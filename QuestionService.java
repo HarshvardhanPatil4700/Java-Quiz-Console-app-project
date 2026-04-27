@@ -15,7 +15,7 @@ public class QuestionService {
         questions[1]= new Question(2, "Size of double?","2","6","4","8","8"); 
         questions[2]= new Question(3, "Size of char?","2","6","4","8","2"); 
         questions[3]= new Question(4, "Size of long?","2","6","4","8","8"); 
-        questions[4]= new Question(5, "Size of boolean?","2","6","4","8","1"); 
+        questions[4]= new Question(5, "Size of boolean?","1","2","4","6","1"); 
     }
 
     public void playQuiz() {
@@ -33,6 +33,9 @@ public class QuestionService {
             System.out.print("Enter your answer : ");
             selection[i] = s.nextLine();
             System.out.println("You entered : " + selection[i]);
+            // new changes :
+            System.out.println("Correct answer : " + q.getAnswer());
+            System.out.println();
             i++;
         }
 
